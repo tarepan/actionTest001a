@@ -10,6 +10,8 @@ jobs:
       # - uses: actions/checkout@v1
       - name: dependencies install
         run: npm install
+      - name: js
+        run: npm start
       - name: Run a one-line script
         run: echo Hello, world! world!!
       - name: Run a multi-line script
