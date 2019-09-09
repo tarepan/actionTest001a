@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/github-script@0.2.0
         with:
-          github-token: ${{github.token}}
+          github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             github.issues.addLabels({...context.issue, labels: ['Triage']})
